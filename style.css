@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(221, 224, 224);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+div.first {
+    background-color: rgb(25, 25, 47);
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+span.main {
+    font-size: 40px;
+    color: aliceblue;
+    margin: 8px;
+}
+
+span.foot {
+    color: aliceblue;
+    font-size: 15px;
+    font-style: italic;
+}
+
+/* Common section styles */
+.about, .edu, .skill, .pro, .CON {
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    max-width: 900px;
+    width: 90%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.edu { background-color: #a6daf8; }
+.skill { background-color: #ede5a4ad; }
+.pro { background-color: #aafa8d64; }
+.CON { background-color: #f09dd748; }
+
+b.b {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Skills / Education items */
+span.b1 {
+    background-color: aliceblue;
+    min-height: 30px;
+    padding: 8px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* 📱 Responsive breakpoints */
+@media (max-width: 768px) {
+    span.main {
+        font-size: 32px;
+    }
+
+    b.b {
+        font-size: 24px;
+    }
+
+    span.b1 {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    div.first {
+        padding: 60px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    span.main {
+        font-size: 26px;
+    }
+
+    span.foot {
+        font-size: 13px;
+    }
+
+    b.b {
+        font-size: 20px;
+    }
+
+    span.b1 {
+        font-size: 13px;
+        padding: 6px;
+    }
+
+    .about, .edu, .skill, .pro, .CON {
+        padding: 15px;
+    }
+}
